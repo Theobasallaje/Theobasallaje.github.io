@@ -1,0 +1,129 @@
+<!-- STUDENTS: Head to float.css for your assignment -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Floats</title>
+  <style>
+    /**
+ * Float Layout Activity
+ **/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  background: #ccc;
+}
+
+section {
+  /* padding: 20px;
+  margin-bottom: 20px; */
+}
+
+#left {
+  width: 33.33%;
+  float: left;
+  background: #666;
+  color: white;
+  padding: 20px 0;
+}
+
+#middle {
+  width: 33.33%;
+  float: left;
+  background: #888;
+  color: white;
+  padding: 20px 0;
+}
+
+#right {
+  width: 33.33%;
+  float: left;
+  background: #666;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+#full {
+  background: #eee;
+  /* margin: 4vh 0;
+  border: 2px solid red;
+  height: 60vh; */
+  padding: 20px;
+  overflow: hidden;
+}
+
+#division {
+  background: #6ea3da;
+  padding: 30px;
+}
+
+aside {
+  background: #fff;
+  float:left;
+  padding: 35px 60px 110px 28px;
+  margin-left: 20px;
+}
+
+footer {
+  background: #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* 
+dont need this cause of overflow
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    &lt;header&gt; #ccc
+  </header>
+
+  <section id="left">
+    &lt;section&gt; #666
+  </section>
+
+  <section id="middle">
+    &lt;section&gt; #888
+  </section>
+
+  <section id="right">
+    &lt;section&gt; #666
+  </section>
+
+  <section class="clearfix" id="full">
+    <aside>
+      &lt;aside&gt; #fff
+    </aside>
+    &lt;section&gt; #eee
+    <div id="division">
+      &lt;div&gt; #6ea3da
+    </div>
+  </section>
+
+  <footer>
+    &lt;footer&gt; #ccc
+  </footer>
+
+</body>
+
+</html>
